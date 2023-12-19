@@ -1,8 +1,16 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: ['./src/**/*.{html,js,jsx}'],
+  content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
   theme: {
-    extend: {}
+    fontFamily: {
+      custom: ['SourceHanSerifCN-Regular']
+    },
+    extend: {
+      colors: {
+        yellow: 'rgb(254 249 195)',
+        textColor: '#3D3D3D'
+      }
+    }
   },
   plugins: []
 }
