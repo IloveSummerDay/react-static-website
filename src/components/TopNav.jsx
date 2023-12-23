@@ -1,8 +1,7 @@
 import { Link } from 'react-router-dom'
-const navs = ['首页', '文化视界', '跨界传承', '盘活非遗', '新闻动态']
-const links = ['/', '/cultural-perspective', '/', '/', '/news']
+const navs = ['文化视界', '跨界传承', '盘活非遗', '新闻动态']
+const links = ['/cultural-perspective/see', '/cross-border-inheritance', '/refresh-cultural-heritage/policy', '/news']
 export default function TopNav() {
-  // const navgate = useNavigate()
   return (
     <>
       <div

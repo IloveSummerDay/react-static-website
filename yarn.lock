@@ -274,6 +274,32 @@
   resolved "https://registry.npmmirror.com/@humanwhocodes/object-schema/-/object-schema-2.0.1.tgz"
   integrity sha512-dvuCeX5fC9dXgJn9t+X5atfmgQAzUOWqS1254Gh0m6i8wKd10ebXkfNKiRK+1GWi/yTvvLDHpoxLr0xxxeslWw==
 
+"@huolala-tech/page-spy-api-win32-amd64@1.5.3":
+  version "1.5.3"
+  resolved "https://registry.npmmirror.com/@huolala-tech/page-spy-api-win32-amd64/-/page-spy-api-win32-amd64-1.5.3.tgz"
+  integrity sha512-wv8NjApVThHjPR8wu0bpnjZSuAMqYhzap2mlaWE14t4yIUdBJJgQPpSswfOU3/YY/u9AF5njn/gPL3/+4P/YvA==
+
+"@huolala-tech/page-spy-api@^1.5.3":
+  version "1.5.3"
+  resolved "https://registry.npmmirror.com/@huolala-tech/page-spy-api/-/page-spy-api-1.5.3.tgz"
+  integrity sha512-UBN6TStes0Yg4Uz6/dpBhfLsNKCiyW9K9xFsRk57hZZEoo20LbqEJVF+8T6DtekOBsX/wM54N4ATpGIRZeB8bw==
+  optionalDependencies:
+    "@huolala-tech/page-spy-api-darwin-amd64" "1.5.3"
+    "@huolala-tech/page-spy-api-darwin-arm64" "1.5.3"
+    "@huolala-tech/page-spy-api-linux-amd64" "1.5.3"
+    "@huolala-tech/page-spy-api-linux-arm" "1.5.3"
+    "@huolala-tech/page-spy-api-linux-arm64" "1.5.3"
+    "@huolala-tech/page-spy-api-linux-mips" "1.5.3"
+    "@huolala-tech/page-spy-api-linux-mips64" "1.5.3"
+    "@huolala-tech/page-spy-api-linux-mips64le" "1.5.3"
+    "@huolala-tech/page-spy-api-linux-mipsle" "1.5.3"
+    "@huolala-tech/page-spy-api-linux-ppc64" "1.5.3"
+    "@huolala-tech/page-spy-api-linux-ppc64le" "1.5.3"
+    "@huolala-tech/page-spy-api-linux-s390x" "1.5.3"
+    "@huolala-tech/page-spy-api-win32-amd64" "1.5.3"
+    "@huolala-tech/page-spy-api-win32-arm" "1.5.3"
+    "@huolala-tech/page-spy-api-win32-arm64" "1.5.3"
+
 "@jridgewell/gen-mapping@^0.3.0", "@jridgewell/gen-mapping@^0.3.2":
   version "0.3.3"
   resolved "https://registry.npmmirror.com/@jridgewell/gen-mapping/-/gen-mapping-0.3.3.tgz"

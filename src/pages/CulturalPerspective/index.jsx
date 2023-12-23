@@ -1,19 +1,17 @@
-import CulturalPerspectiveNav from '../../components/CulturalPerspective/CulturalPerspectiveNav'
-// import EchartSvg from '../../components/CulturalPerspective/EchartSvg'
-import Experience from '../../components/CulturalPerspective/Experience'
+import { Outlet } from 'react-router-dom'
+import CulturalPerspectiveNav from '../../components/FuncNav'
 export default function CulturalPerspective() {
   return (
     <>
-      <div className=" h-[100vh] bg-[#D8D8D8] text-textColor">
-        <CulturalPerspectiveNav />
-        <div
-          className=" text-[80px] absolute top-[10px] left-[50px] opacity-40"
-          style={{ writingMode: 'vertical-rl', textOrientation: 'mixed', whiteSpace: 'nowrap' }}
-        >
-          文化视界
-        </div>
-        {/* <EchartSvg /> */}
-        <Experience />
+      <div className=" h-[100vh] bg-gradient-to-r from-gradientFrom to-gradientTo">
+        <CulturalPerspectiveNav
+          navs={['看见非遗', '体验非遗']}
+          navsUrl={['/cultural-perspective/see', '/cultural-perspective/experience']}
+          title={'文化视界'}
+          titleWidth={15}
+          desc={'Cultural Perspective'}
+        />
+        <Outlet />
       </div>
     </>
   )

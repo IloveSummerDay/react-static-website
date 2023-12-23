@@ -11,11 +11,10 @@ function App() {
   const [pagation, setPagation] = useState([choiceBtn, choiceNoneBtn, choiceNoneBtn])
 
   const transitions = useTransition(index, {
-    from: { opacity: 0.2 },
+    from: { opacity: 0.5 },
     enter: { opacity: 1 },
     // leave: { opacity: 0 },
     config: { duration: 3000 },
-    // immediate: true,
     onStart: () => {
       console.log('【开始】')
     },
