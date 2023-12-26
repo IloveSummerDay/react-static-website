@@ -1,12 +1,40 @@
-import { animated, useTrail } from '@react-spring/web'
+import { useEffect, useState } from 'react'
+import FiveField from '../../components/CrossborderInheritance/FiveField'
+import LoadingSpinner from '../../components/CrossborderInheritance/LoadingSpinner'
 import CrossborderInheritanceNav from '../../components/FuncNav'
 
 function CrossborderInheritance() {
-  const trails = useTrail(5, {
-    config: { mass: 5, tension: 2000, friction: 200, duration: 300 },
-    from: { opacity: 0 },
-    to: { opacity: 1 }
-  })
+  const imageUrls = [
+    '/CrossborderInheritance/卡片1.png',
+    '/CrossborderInheritance/卡片2.png',
+    '/CrossborderInheritance/卡片3.png',
+    '/CrossborderInheritance/卡片4.png',
+    '/CrossborderInheritance/卡片5.png'
+  ]
+  const [imagesLoaded, setImagesLoaded] = useState(false)
+  function loadImage(url) {
+    return new Promise((resolve, reject) => {
+      const img = new Image()
+      img.src = url
+      img.addEventListener('load', () => resolve())
+      img.addEventListener('error', () => reject())
+    })
+  }
+  useEffect(() => {
+    async function preLoadImages() {
+      try {
+        await Promise.all(imageUrls.map(url => loadImage(url)))
+        setImagesLoaded(true)
+        console.log('【All images loaded】')
+      } catch (error) {
+        console.log('【Error loading images】', error)
+      }
+    }
+    preLoadImages()
+    return () => {
+      setImagesLoaded(false)
+    }
+  }, [])
   return (
     <>
       <CrossborderInheritanceNav
@@ -18,16 +46,14 @@ function CrossborderInheritance() {
         className=" h-[88vh] bg-gradient-to-r from-gradientFrom to-gradientTo
        flex items-center"
       >
-        {trails.map((style, index) => (
-          <animated.div
-            key={index}
-            style={style}
-            className=" h-[80%] flex-1 mr-[2rem] ml-[2rem] bg-black
-          cursor-pointer hover:scale-[1.1] transition-transform duration-[800ms]"
-          >
-            Hello World
-          </animated.div>
-        ))}
+        <div className=" h-[80%] w-full flex items-center justify-evenly">
+          {imagesLoaded ? (
+            // 如果所有图片都加载完成，进行渲染
+            <FiveField imageUrls={imageUrls} />
+          ) : (
+            <LoadingSpinner />
+          )}
+        </div>
       </div>
     </>
   )

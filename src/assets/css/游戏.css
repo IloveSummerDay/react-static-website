@@ -1,0 +1,94 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  position: relative;
+  width: 100%;
+  height: 1600px;
+  background: url(/public/_blankImg/1.png);
+}
+.navigat {
+  width: 100%;
+  height: 50px;
+  display: block;
+  position: relative;
+  background: url(/public/_blankImg/导航栏.png);
+  overflow: hidden;
+}
+.main {
+  width: 1178px;
+  height: 1500px;
+  display: block;
+  margin: auto;
+}
+.title {
+  width: 100%;
+  height: 60px;
+  display: block;
+}
+.title h1 {
+  font-weight: bold;
+  font-size: 36px;
+  margin-top: 20px;
+}
+.content1 {
+  width: 100%;
+  height: 180px;
+  display: block;
+  line-height: 32px;
+}
+.content1 p {
+  text-indent: 2em;
+  font-size: 25px;
+}
+.small_title {
+  width: 100%;
+  height: 50px;
+  display: block;
+}
+.small_title h4 {
+  font-weight: bold;
+  font-size: 28px;
+}
+.photo_content {
+  width: 100%;
+  height: 291px;
+  display: flex;
+  margin: 30px auto;
+}
+.photo1 {
+  width: 498px;
+  height: 291px;
+  background: url(/public/_blankImg/游戏1.png);
+  display: block;
+}
+.photo2 {
+  width: 498px;
+  height: 291px;
+  background: url(/public/_blankImg/游戏2.png);
+  display: block;
+  margin-left: 182px;
+}
+.photo3 {
+  width: 498px;
+  height: 291px;
+  background: url(/public/_blankImg/游戏3.png);
+  display: block;
+}
+.photo4 {
+  width: 498px;
+  height: 291px;
+  background: url(/public/_blankImg/游戏4.png);
+  display: block;
+  margin-left: 182px;
+}
+.content2 {
+  width: 100%;
+  height: 108px;
+  display: block;
+}
+.content2 p {
+  text-indent: 2em;
+  font-size: 25px;
+}

@@ -1,5 +1,5 @@
 import { useRef, useState } from 'react'
-import { useLocation, useNavigate } from 'react-router-dom'
+import { NavLink, useLocation, useNavigate } from 'react-router-dom'
 
 function FuncNav({ title, desc, navs = [], navsUrl = [], titleWidth = 15 }) {
   const navigate = useNavigate()
@@ -27,9 +27,19 @@ function FuncNav({ title, desc, navs = [], navsUrl = [], titleWidth = 15 }) {
       className="h-[12vh] flex items-center  bg-gradient-to-r from-gradientNavFrom to-gradientNavTo
      relative"
     >
+      <NavLink
+        to={'/'}
+        className=" block h-[50%] ml-4"
+      >
+        <img
+          className=" block h-full hover:scale-[0.8] transition-all duration-500"
+          src="/homeicon.svg"
+          alt=""
+        />
+      </NavLink>
       <div
         className=" relative text-white h-full 
-      flex flex-col justify-evenly items-center ml-[3rem]"
+      flex flex-col justify-evenly items-center ml-[2rem]"
         style={{ width: titleWidth + 'rem' }}
       >
         <p className=" w-full text-left text-[1.5rem]">{title}</p>
@@ -40,7 +50,7 @@ function FuncNav({ title, desc, navs = [], navsUrl = [], titleWidth = 15 }) {
           return (
             <div
               className=" relative text-[1.3rem] ml-[4rem] cursor-pointer 
-              font-custom flex flex-col justify-start items-center text-textNavTitleColor"
+              flex flex-col justify-start items-center text-textNavTitleColor"
               key={index}
             >
               <p

@@ -1,0 +1,103 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  position: relative;
+  width: 100%;
+  height: 3175px;
+  background: url(/public/_blankImg/1.png);
+}
+.navigat {
+  width: 100%;
+  height: 50px;
+  display: block;
+  position: relative;
+  background: url(/public/_blankImg/导航栏.png);
+  overflow: hidden;
+}
+.main {
+  width: 1178px;
+  height: 3000px;
+  margin: auto;
+  overflow: hidden;
+  display: block;
+  position: relative;
+}
+.part {
+  margin-top: 28px;
+  width: 1178px;
+  height: 715px;
+  overflow: hidden;
+  display: flex;
+}
+h1 {
+  font-size: 39px;
+  font-weight: bold;
+  line-height: 30%;
+}
+.part_name {
+  width: 100%;
+  height: 60px;
+  position: absolute;
+}
+.part_photo {
+  width: 344px;
+  height: 100%;
+  display: block;
+}
+.photo1 {
+  width: 344px;
+  height: 566px;
+  margin-top: 74.5px;
+  background: url(/public/_blankImg/影视1.png);
+}
+.photo2 {
+  width: 344px;
+  height: 566px;
+  margin-top: 74.5px;
+  background: url(/public/_blankImg/影视2.png);
+}
+.photo3 {
+  width: 344px;
+  height: 566px;
+  margin-top: 74.5px;
+  background: url(/public/_blankImg/影视3.png);
+}
+.photo4 {
+  width: 344px;
+  height: 566px;
+  margin-top: 74.5px;
+  background: url(/public/_blankImg/影视4.png);
+}
+.part_text {
+  width: 660px;
+  height: 655px;
+  margin-top: 60px;
+  margin-left: 174px;
+}
+.Text1 {
+  width: 100%;
+  height: 216px;
+  display: block;
+}
+.Text1 td {
+  line-height: 40px;
+  font-size: 25px;
+}
+.Text2 {
+  width: 100%;
+}
+.Text2 p {
+  line-height: 40px;
+  font-size: 25px;
+  margin-top: 78.2px;
+}
+.Text3 {
+  width: 100%;
+  margin-top: 150px;
+}
+.Text3 td {
+  line-height: 32px;
+  font-size: 25px;
+}

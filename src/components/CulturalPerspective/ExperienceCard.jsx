@@ -1,11 +1,6 @@
 import { animated, useTransition } from '@react-spring/web'
-import { useNavigate } from 'react-router-dom'
 
 function ExperienceCard({ imgUrl, text, desc }) {
-  const navigate = useNavigate()
-  const handleNav = () => {
-    navigate('/')
-  }
   const transitions = useTransition(1, {
     from: { opacity: 0.2 },
     enter: { opacity: 1 },
@@ -26,15 +21,19 @@ function ExperienceCard({ imgUrl, text, desc }) {
       {transitions(style => (
         <animated.div
           style={{ ...style }}
-          onClick={() => handleNav()}
           className=" w-full h-full relative flex flex-col items-center justify-evenly
-         bg-gradient-to-br from-[#FFECC7] to-[#F6CA7E]"
+         bg-gradient-to-br from-[#FFECC7] to-[#F6CA7E] 
+         "
         >
-          <div className=" w-full h-[70%] flex justify-evenly items-center">
+          <div
+            className=" w-full h-[70%] flex justify-evenly items-center
+          
+          "
+          >
             <img
               src={imgUrl}
               alt=""
-              className=" h-full w-auto block mx-auto hover:scale-[1.05] duration-500 cursor-pointer"
+              className=" h-full w-auto block mx-auto duration-500 cursor-pointer"
             />
             <p className=" text-center text-xl text-[1rem]">
               <span className=" text-[#C05A47]">{text}</span>

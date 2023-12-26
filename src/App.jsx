@@ -35,7 +35,13 @@ function App() {
       {transitions((style, i) => (
         <animated.div
           className="w-[100vw] h-[100vh] object-cover object-center"
-          style={{ ...style, backgroundImage: `url(/${imgs[i]})`, willChange: 'opacity' }}
+          style={{
+            ...style,
+            backgroundImage: `url(/${imgs[i]})`,
+            willChange: 'opacity',
+            backgroundRepeat: 'no-repeat',
+            backgroundSize: 'cover'
+          }}
         />
       ))}
       <div className=" absolute flex bottom-1 left-[50%] translate-x-[-50%] h-9">

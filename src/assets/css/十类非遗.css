@@ -1,0 +1,105 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  position: relative;
+  width: 100%;
+  background: url(/public/_blankImg/1.png);
+}
+.navigat {
+  width: 100%;
+  height: 50px;
+  display: block;
+  position: relative;
+  background: url(/public/_blankImg/导航栏.png);
+  overflow: hidden;
+}
+.main {
+  width: 1274px;
+  display: flex;
+  margin: auto;
+  margin-top: 20px;
+}
+.content1 {
+  width: 318px;
+  display: block;
+}
+.content2 {
+  width: 488px;
+  display: block;
+}
+.content3 {
+  width: 449px;
+  display: block;
+}
+.content4 {
+  width: 937px;
+  display: block;
+}
+.content5 p {
+  font-size: 32px;
+  text-indent: 2em;
+  line-height: 34px;
+}
+.Text {
+  width: 262px;
+  height: 229px;
+  display: block;
+  line-height: 39px;
+}
+.Text p {
+  margin-top: 20px;
+  font-size: 32px;
+}
+.part_photo {
+  width: 544.72px;
+  display: block;
+  margin: auto;
+}
+.photos {
+  width: 262px;
+  display: block;
+  margin-top: 39px;
+}
+.photo {
+  width: 262px;
+  height: 157px;
+  display: block;
+  margin: 25.5px auto;
+}
+.title {
+  width: 320px;
+  height: 68px;
+  display: block;
+}
+.title p {
+  font-size: 64px;
+  margin-top: 10px;
+}
+.photos1 {
+  width: 412px;
+  display: block;
+  margin-top: 89px;
+}
+.photo1 {
+  width: 412px;
+  height: 298px;
+  display: block;
+  margin: 30px auto;
+}
+.Text1 {
+  width: 449px;
+  margin-top: 167px;
+  line-height: 12px;
+}
+.Text1 p {
+  font-size: 32px;
+  text-indent: 2em;
+  line-height: 38px;
+  margin: 10px auto;
+}
+.end {
+  width: 100%;
+  height: 100px;
+}
