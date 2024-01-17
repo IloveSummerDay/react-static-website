@@ -8,7 +8,7 @@ export default function QA() {
   }
   return (
     <div
-      className="h-[80vh] w-[80%] text-textColor
+      className="h-[80%] w-[80%] text-textColor
        mx-auto  mt-10  overflow-hidden relative flex justify-center"
     >
       <img

@@ -18,7 +18,7 @@ function TodayDisplayDetail() {
   return (
     <>
       <header
-        className=" h-[12vh] bg-gradient-to-r from-gradientNavFrom to-gradientNavTo
+        className=" h-[12%] bg-gradient-to-r from-gradientNavFrom to-gradientNavTo
       flex items-center
       "
       >
@@ -43,7 +43,7 @@ function TodayDisplayDetail() {
       </header>
 
       <div
-        className="h-[88vh] flex justify-evenly items-center
+        className="h-[88%] flex justify-evenly items-center
       bg-gradient-to-r from-gradientFrom to-gradientTo
        select-none
       "
@@ -53,7 +53,17 @@ function TodayDisplayDetail() {
          flex flex-col justify-evenly items-center text-textColor
         "
         >
-          <p className=" text-[1.5rem]">{displayInfo[displayIndex].title}</p>
+          <div className=" w-full  flex justify-between items-center">
+            <CaretLeftOutlined
+              className=" cursor-pointer text-[3rem] block"
+              onClick={handlePrev}
+            />
+            <p className=" text-[1.5rem]">{displayInfo[displayIndex].title}</p>
+            <CaretRightOutlined
+              className=" cursor-pointer text-[3rem] block"
+              onClick={handleNext}
+            />
+          </div>
           <img
             src="../../../public/中国扇分割线.svg"
             alt=""
@@ -82,16 +92,7 @@ function TodayDisplayDetail() {
             className=" absolute bottom-4 text-[2rem] right-4 text-white
             
             "
-          >
-            <CaretLeftOutlined
-              className=" cursor-pointer"
-              onClick={handlePrev}
-            />
-            <CaretRightOutlined
-              className=" cursor-pointer"
-              onClick={handleNext}
-            />
-          </div>
+          ></div>
         </div>
       </div>
     </>

@@ -1,8 +1,19 @@
-import '../../assets/css/旅游.css'
+import { useEffect } from 'react'
 
 export default function Travel() {
+  useEffect(() => {
+    const link = document.createElement('link')
+    link.href = '/css/旅游.css' // 替换为你的 CSS 文件路径
+    link.rel = 'stylesheet'
+
+    document.head.appendChild(link)
+
+    return () => {
+      document.head.removeChild(link)
+    }
+  }, [])
   return (
-    <div className="container">
+    <div className="container1">
       <div className="navigat"></div>
       <div className="main">
         <div className="title">
@@ -13,10 +24,11 @@ export default function Travel() {
             <h4>新疆</h4>
           </div>
           <div className="content">
-            <p className="mt-[10px]">
+            <p className=" mt-[10px]">
               新疆是非遗大区，非遗资源涵盖民间文学、传统音乐舞蹈、戏曲艺术、体育杂技等多个门类，基于此，“非遗+旅游”正日渐成为新疆各地文旅发展的新方式。非遗与旅游的融合不仅增强了游客的文化体验，同时也为非遗“活”起来开辟了新路径。
             </p>
             <p>
+              {' '}
               “《通知》是新疆进一步推动非遗和旅游融合发展的指导性文件，我们将通过‘非遗+旅游’进一步推动文旅融合，使‘非遗+旅游’成为落实旅游兴疆战略的有力举措。”新疆维吾尔自治区文化和旅游厅非物质文化遗产处处长罗静说。
             </p>
             <p>
@@ -26,7 +38,7 @@ export default function Travel() {
               截至目前，新疆有3个入选联合国教科文组织非遗名录项目、94个国家级非遗项目、315个自治区级非遗项目。为推动非遗助力乡村振兴，新疆还鼓励建设非遗工坊，促进当地脱贫人口就业增收。目前，全区130多家非遗工坊带动7000多人就业增收，完成订单700多万件，有效助力巩固脱贫攻坚和乡村振兴，各族人民共同参与非遗保护、共享非遗保护成果。
             </p>
           </div>
-          <div className="photo1"></div>
+          <div className="photo1 mt-[5rem]"></div>
           <div className="annotation">
             <p>非遗走进乡村——阿克苏文化旅游发展集团有限公司供图</p>
           </div>
@@ -36,7 +48,7 @@ export default function Travel() {
             <h4>安徽黟县</h4>
           </div>
           <div className="content2">
-            <p className="mt-[10px]">
+            <p className=" mt-[10px]">
               {' '}
               黟县宏村镇老宏村小学“黟县非遗保护传承研学与传播基地”里，来自五湖四海的游客兴致勃勃地体验花灯制作。他们有的在细微地给花灯上色，有的学习花灯骨架制作，现场热闹非凡。
             </p>

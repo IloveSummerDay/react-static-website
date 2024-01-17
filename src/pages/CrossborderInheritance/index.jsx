@@ -2,15 +2,15 @@ import { useEffect, useState } from 'react'
 import FiveField from '../../components/CrossborderInheritance/FiveField'
 import LoadingSpinner from '../../components/CrossborderInheritance/LoadingSpinner'
 import CrossborderInheritanceNav from '../../components/FuncNav'
+const imageUrls = [
+  '/CrossborderInheritance/卡片1.png',
+  '/CrossborderInheritance/卡片2.png',
+  '/CrossborderInheritance/卡片3.png',
+  '/CrossborderInheritance/卡片4.png',
+  '/CrossborderInheritance/卡片5.png'
+]
 
 function CrossborderInheritance() {
-  const imageUrls = [
-    '/CrossborderInheritance/卡片1.png',
-    '/CrossborderInheritance/卡片2.png',
-    '/CrossborderInheritance/卡片3.png',
-    '/CrossborderInheritance/卡片4.png',
-    '/CrossborderInheritance/卡片5.png'
-  ]
   const [imagesLoaded, setImagesLoaded] = useState(false)
   function loadImage(url) {
     return new Promise((resolve, reject) => {
@@ -43,7 +43,7 @@ function CrossborderInheritance() {
         desc={'Cross Border Inheritance'}
       />
       <div
-        className=" h-[88vh] bg-gradient-to-r from-gradientFrom to-gradientTo
+        className=" h-[88%] bg-gradient-to-r from-gradientFrom to-gradientTo
        flex items-center"
       >
         <div className=" h-[80%] w-full flex items-center justify-evenly">

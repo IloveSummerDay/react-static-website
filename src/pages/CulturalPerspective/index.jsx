@@ -3,7 +3,7 @@ import CulturalPerspectiveNav from '../../components/FuncNav'
 export default function CulturalPerspective() {
   return (
     <>
-      <div className=" h-[100vh] bg-gradient-to-r from-gradientFrom to-gradientTo">
+      <div className=" h-[100%] bg-gradient-to-r from-gradientFrom to-gradientTo">
         <CulturalPerspectiveNav
           navs={['看见非遗', '体验非遗']}
           navsUrl={['/cultural-perspective/see', '/cultural-perspective/experience']}

@@ -1,8 +1,19 @@
-import '../../assets/css/新闻.css'
+import { useEffect } from 'react'
 
 function Events3() {
+  useEffect(() => {
+    const link = document.createElement('link')
+    link.href = '/css/新闻.css' // 替换为你的 CSS 文件路径
+    link.rel = 'stylesheet'
+
+    document.head.appendChild(link)
+
+    return () => {
+      document.head.removeChild(link)
+    }
+  }, [])
   return (
-    <div className="container">
+    <div className="container1">
       <div className="navigat"></div>
       <div className="main">
         <div className="title">
@@ -21,10 +32,10 @@ function Events3() {
         </div>
         <div className="part_photo2">
           <div className="photo">
-            <img src="/public/_blankImg/新闻资讯9.png" />
+            <img src="/_blankImg/新闻资讯9.png" />
           </div>
           <div className="photo_1">
-            <img src="/public/_blankImg/新闻资讯10.png" />
+            <img src="/_blankImg/新闻资讯10.png" />
           </div>
         </div>
         <div className="content">
@@ -40,10 +51,10 @@ function Events3() {
         </div>
         <div className="part_photo2">
           <div className="photo">
-            <img src="/public/_blankImg/新闻资讯11.png" />
+            <img src="/_blankImg/新闻资讯11.png" />
           </div>
           <div className="photo_1">
-            <img src="/public/_blankImg/新闻资讯12.png" />
+            <img src="/_blankImg/新闻资讯12.png" />
           </div>
         </div>
         <div className="content">
@@ -56,7 +67,7 @@ function Events3() {
         </div>
         <div className="part_photo">
           <div className="photo">
-            <img src="/public/_blankImg/新闻资讯13.png" />
+            <img src="/_blankImg/新闻资讯13.png" />
           </div>
         </div>
       </div>

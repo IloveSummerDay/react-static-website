@@ -12,7 +12,7 @@ function RefreshCulturalHeritage() {
         titleWidth={22}
       />
       <div
-        className=" h-[88vh] bg-gradient-to-r from-gradientFrom to-gradientTo
+        className=" h-[88%] bg-gradient-to-r from-gradientFrom to-gradientTo
          pb-[2rem] pt-[1rem]
        "
       >

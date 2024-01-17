@@ -1,19 +1,20 @@
 body {
   margin: 0;
   padding: 0;
+  font-weight: normal;
 }
-.container {
+.container1 {
   position: relative;
   width: 100%;
   height: 1600px;
-  background: url(/public/_blankImg/1.png);
+  background: url(/_blankImg/1.png);
 }
 .navigat {
   width: 100%;
   height: 50px;
   display: block;
   position: relative;
-  background: url(/public/_blankImg/导航栏.png);
+  background: url(/_blankImg/导航栏.png);
   overflow: hidden;
 }
 .main {
@@ -60,26 +61,26 @@ body {
 .photo1 {
   width: 498px;
   height: 291px;
-  background: url(/public/_blankImg/游戏1.png);
+  background: url(/_blankImg/游戏1.png);
   display: block;
 }
 .photo2 {
   width: 498px;
   height: 291px;
-  background: url(/public/_blankImg/游戏2.png);
+  background: url(/_blankImg/游戏2.png);
   display: block;
   margin-left: 182px;
 }
 .photo3 {
   width: 498px;
   height: 291px;
-  background: url(/public/_blankImg/游戏3.png);
+  background: url(/_blankImg/游戏3.png);
   display: block;
 }
 .photo4 {
   width: 498px;
   height: 291px;
-  background: url(/public/_blankImg/游戏4.png);
+  background: url(/_blankImg/游戏4.png);
   display: block;
   margin-left: 182px;
 }

@@ -24,7 +24,7 @@ function FuncNav({ title, desc, navs = [], navsUrl = [], titleWidth = 15 }) {
   }
   return (
     <header
-      className="h-[12vh] flex items-center  bg-gradient-to-r from-gradientNavFrom to-gradientNavTo
+      className="h-[12%] flex items-center  bg-gradient-to-r from-gradientNavFrom to-gradientNavTo
      relative"
     >
       <NavLink

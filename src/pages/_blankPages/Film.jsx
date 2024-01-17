@@ -1,8 +1,19 @@
-import '../../assets/css/影视.css'
+import { useEffect } from 'react'
 
 export default function Film() {
+  useEffect(() => {
+    const link = document.createElement('link')
+    link.href = '/css/影视.css' // 替换为你的 CSS 文件路径
+    link.rel = 'stylesheet'
+
+    document.head.appendChild(link)
+
+    return () => {
+      document.head.removeChild(link)
+    }
+  }, [])
   return (
-    <div className="container">
+    <div className="container1">
       <div className="navigat"></div>
       <div className="main">
         <div className="part">
@@ -162,7 +173,7 @@ export default function Film() {
               </table>
             </div>
             <div className="Text2">
-              <p className="mt-[120px]">
+              <p className=" mt-[120px]">
                 用匠心讲述匠人故事，公益文化纪录片《百心百匠》， 在湖南卫视、优酷、芒果TV等平台播出。
                 著名媒体人孙冕，携手李亚鹏、孙楠、柯蓝、许亚军、李艾、李泉、喻恩泰、吴晓波、老狼、马艳丽等名人明星，
                 拜师民间非遗匠人，躬身俯首，身体力行感受传统技艺不传统的魅力。

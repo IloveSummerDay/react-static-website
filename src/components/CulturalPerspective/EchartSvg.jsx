@@ -1,6 +1,7 @@
 import { animated, useTransition } from '@react-spring/web'
 import * as echarts from 'echarts'
 import { useEffect, useRef, useState } from 'react'
+import { NavLink } from 'react-router-dom'
 import 'swiper/css'
 import 'swiper/css/free-mode'
 import 'swiper/css/pagination'
@@ -9,7 +10,7 @@ import { Swiper, SwiperSlide } from 'swiper/react'
 import { echartOptions } from './echartOptions'
 import { provinceCulturalData } from './provinceCulturalData'
 let chart
-
+const navs = ['Quyi', 'Paint', 'Skill', 'Sport', 'Dance', 'Drama', 'Medicine', 'Music', 'Literature', 'Folk']
 function EchartSvg() {
   const twRef = useRef(null)
   const div = useRef(null)
@@ -76,7 +77,7 @@ function EchartSvg() {
   }
   return (
     <>
-      <div className=" h-[60vh] mt-10 flex items-center justify-evenly text-textColor">
+      <div className=" h-[60%] mt-10 flex items-center justify-evenly text-textColor">
         {transitions(style => (
           <animated.svg
             style={{ ...style }}
@@ -531,20 +532,38 @@ function EchartSvg() {
           clickable: true
         }}
         modules={[FreeMode, Pagination]}
-        className=" h-[20vh] w-[60%] mx-auto "
+        className=" h-[20%] w-[60%] mx-auto "
       >
-        {[1, 1, 1, 1, 1, 1, 1, 1, 1, 1].map((src, i) => {
+        {[
+          '传统曲艺',
+          '传统绘画',
+          '传统技艺',
+          '传统体育',
+          '传统舞蹈',
+          '传统戏剧',
+          '传统医药',
+          '传统音乐',
+          '传统文学',
+          '传统民俗'
+        ].map((title, i) => {
           return (
             <SwiperSlide
               key={i}
               className=" select-none h-full"
               style={{ width: 'auto', display: 'inline-block' }}
             >
-              <img
-                src={`/TenCategories/${i}.png`}
-                alt="1111"
-                className=" h-full w-auto"
-              />
+              <NavLink
+                to={`/${navs[i]}`}
+                target="_blank"
+                className=" cursor-pointer"
+              >
+                <img
+                  src={`/TenCategories/${i}.png`}
+                  alt=""
+                  title={title}
+                  className=" h-full w-auto"
+                />
+              </NavLink>
             </SwiperSlide>
           )
         })}

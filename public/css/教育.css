@@ -1,0 +1,208 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+.e1_container1 {
+  position: relative;
+  width: 100%;
+  background: url(/_blankImg/1.png);
+}
+.e1_navigat {
+  width: 100%;
+  height: 50px;
+  display: block;
+  position: relative;
+  background: url(/_blankImg/导航栏.png);
+  overflow: hidden;
+}
+.e1_main {
+  width: 1178px;
+  height: 1400px;
+  display: block;
+  margin: auto;
+}
+.e1_title {
+  width: 100%;
+  height: 60px;
+  display: block;
+}
+.e1_title h1 {
+  font-weight: bold;
+  font-size: 36px;
+  margin-top: 20px;
+}
+.e1_small_title {
+  width: 100%;
+  height: 40px;
+  display: block;
+}
+.e1_small_title p {
+  font-size: 20px;
+  margin: 10px auto;
+}
+.e1_content {
+  width: 100%;
+  height: 252px;
+  line-height: 40px;
+}
+.e1_content {
+  font-size: 25px;
+  text-indent: 2em;
+}
+.e1_content2 {
+  width: 100%;
+  height: 257px;
+  line-height: 40px;
+}
+.e1_content2 {
+  font-size: 25px;
+  text-indent: 2em;
+}
+.e1_photo_content {
+  width: 100%;
+  height: 291px;
+  display: flex;
+  margin: 30px auto;
+}
+.e1_photo1 {
+  width: 498px;
+  height: 291px;
+  background: url(/_blankImg/教育1.png);
+  display: block;
+}
+.e1_photo2 {
+  width: 498px;
+  height: 291px;
+  background: url(/_blankImg/教育2.png);
+  display: block;
+  margin-left: 182px;
+}
+
+.e2_container1 {
+  position: relative;
+  width: 100%;
+  background: url(/_blankImg/1.png);
+}
+.e2_navigat {
+  width: 100%;
+  height: 50px;
+  display: block;
+  position: relative;
+  background: url(/_blankImg/导航栏.png);
+  overflow: hidden;
+}
+.e2_main {
+  width: 1178px;
+  height: 1200px;
+  display: block;
+  margin: auto;
+}
+.e2_title {
+  width: 100%;
+  height: 60px;
+  display: block;
+}
+.e2_title h1 {
+  font-weight: bold;
+  font-size: 36px;
+}
+.e2_small_title {
+  width: 100%;
+  height: 40px;
+  display: block;
+}
+.e2_small_title p {
+  font-size: 20px;
+  margin: 10px auto;
+}
+.e2_content {
+  width: 100%;
+  height: 576px;
+  display: block;
+  line-height: 40px;
+}
+.e2_content p {
+  font-size: 25px;
+  text-indent: 2em;
+}
+.e2_part_photo {
+  width: 100%;
+  height: 291px;
+  display: flex;
+  margin: 70px auto;
+}
+.e2_photo3 {
+  width: 498px;
+  height: 291px;
+  background: url(/_blankImg/教育3.png);
+  display: block;
+}
+.e2_photo4 {
+  width: 498px;
+  height: 291px;
+  background: url(/_blankImg/教育4.png);
+  display: block;
+  margin-left: 182px;
+}
+
+.e3_container1 {
+  position: relative;
+  width: 100%;
+  background: url(/_blankImg/1.png);
+}
+.e3_navigat {
+  width: 100%;
+  height: 50px;
+  display: block;
+  position: relative;
+  background: url(/_blankImg/导航栏.png);
+  overflow: hidden;
+}
+.e3_main {
+  width: 1178px;
+  height: 1600px;
+  display: block;
+  margin: auto;
+}
+.e3_title {
+  width: 100%;
+  height: 60px;
+  display: block;
+}
+.e3_title h1 {
+  font-weight: bold;
+  font-size: 36px;
+}
+.e3_small_title {
+  width: 100%;
+  height: 40px;
+  display: block;
+}
+.e3_small_title p {
+  font-size: 20px;
+  margin: 10px auto;
+}
+.e3_content {
+  width: 100%;
+  height: 196px;
+  display: block;
+  line-height: 40px;
+}
+.e3_content p {
+  font-size: 25px;
+  text-indent: 2em;
+}
+.e3_part_photo {
+  width: 100%;
+  height: 291px;
+  display: block;
+  margin: 50px auto;
+}
+.e3_photo5 {
+  width: 498px;
+  height: 291px;
+  display: block;
+  margin: auto;
+  background: url(/_blankImg/教育5.png);
+}

@@ -1,9 +1,20 @@
-import '../../assets/css/游戏.css'
+import { useEffect } from 'react'
 
 export default function Game() {
+  useEffect(() => {
+    const link = document.createElement('link')
+    link.href = '/css/游戏.css' // 替换为你的 CSS 文件路径
+    link.rel = 'stylesheet'
+
+    document.head.appendChild(link)
+
+    return () => {
+      document.head.removeChild(link)
+    }
+  }, [])
   return (
     <div>
-      <div className="container">
+      <div className="container1">
         <div className="navigat"></div>
         <div className="main">
           <div className="title">
@@ -14,7 +25,7 @@ export default function Game() {
               在数码时代的潮流之下，传统非物质文化遗产在游戏的世界里找到了新的传承之路。电子游戏不再仅仅是娱乐的媒介，它成为了一个跨越时空的桥梁，将古老的传统文化注入到数字化的虚拟世界之中。
             </p>
             <br />
-            <p className=" mt-0">
+            <p>
               电子游戏不仅仅是代码和图像的堆砌，更是一种文化的传递。从古老的神话传说到传统的民间故事，游戏为这些非物质文化遗产提供了全新的表达方式。
             </p>
             <br />

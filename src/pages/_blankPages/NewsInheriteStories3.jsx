@@ -1,8 +1,19 @@
-import '../../assets/css/新闻.css'
+import { useEffect } from 'react'
 
 function NewsInheriteStories() {
+  useEffect(() => {
+    const link = document.createElement('link')
+    link.href = '/css/新闻.css' // 替换为你的 CSS 文件路径
+    link.rel = 'stylesheet'
+
+    document.head.appendChild(link)
+
+    return () => {
+      document.head.removeChild(link)
+    }
+  }, [])
   return (
-    <div className="container">
+    <div className="container1">
       <div className="navigat"></div>
       <div className="main">
         <div className="title">
@@ -21,7 +32,7 @@ function NewsInheriteStories() {
         </div>
         <div className="part_photo">
           <div className="photo">
-            <img src="/public/_blankImg/新闻传承7.png" />
+            <img src="/_blankImg/新闻传承7.png" />
           </div>
         </div>
         <div className="content">
@@ -45,7 +56,7 @@ function NewsInheriteStories() {
         </div>
         <div className="part_photo">
           <div className="photo">
-            <img src="/public/_blankImg/新闻传承8.png" />
+            <img src="/_blankImg/新闻传承8.png" />
           </div>
         </div>
         <div className="content">
@@ -64,9 +75,9 @@ function NewsInheriteStories() {
             随之，这个曾不被人看好的年轻人，如今却成为了颇有名气的致富带头人。
           </p>
         </div>
-        <div className="part_photo">
+        {/* <div className="part_photo">
           <div className="photo object-contain">
-            <img src="/public/_blankImg/新闻传承9.png" />
+            <img src="/_blankImg/新闻传承9.png" />
           </div>
         </div>
         <div className="content">
@@ -78,7 +89,7 @@ function NewsInheriteStories() {
             只有每一步都做好了、做对了，最后才能有价值，不能夜郎自大也不能投机取巧，
             人生没有捷径，每一步都是必经之路。只有脚踏实地的干事，才能作出成绩。
           </p>
-        </div>
+        </div> */}
       </div>
       <div className="end"></div>
     </div>

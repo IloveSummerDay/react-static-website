@@ -1,8 +1,19 @@
-import '../../assets/css/新闻.css'
+import { useEffect } from 'react'
 
 function NewsInheriteStories() {
+  useEffect(() => {
+    const link = document.createElement('link')
+    link.href = '/css/新闻.css' // 替换为你的 CSS 文件路径
+    link.rel = 'stylesheet'
+
+    document.head.appendChild(link)
+
+    return () => {
+      document.head.removeChild(link)
+    }
+  }, [])
   return (
-    <div className="container">
+    <div className="container1">
       <div className="navigat"></div>
       <div className="main">
         <div className="title">
@@ -19,7 +30,7 @@ function NewsInheriteStories() {
         </div>
         <div className="part_photo">
           <div className="photo">
-            <img src="/public/_blankImg/新闻传承3.png" />
+            <img src="/_blankImg/新闻传承3.png" />
           </div>
         </div>
         <div className="content">
@@ -36,7 +47,7 @@ function NewsInheriteStories() {
         </div>
         <div className="part_photo">
           <div className="photo">
-            <img src="/public/_blankImg/新闻传承4.png" />
+            <img src="/_blankImg/新闻传承4.png" />
           </div>
         </div>
         <div className="content">
@@ -47,7 +58,7 @@ function NewsInheriteStories() {
         </div>
         <div className="part_photo">
           <div className="photo">
-            <img src="/public/_blankImg/新闻传承5.png" />
+            <img src="/_blankImg/新闻传承5.png" />
           </div>
         </div>
         <div className="content">
@@ -61,7 +72,7 @@ function NewsInheriteStories() {
         </div>
         <div className="part_photo">
           <div className="photo">
-            <img src="/public/_blankImg/新闻传承6.png" />
+            <img src="/_blankImg/新闻传承6.png" />
           </div>
         </div>
       </div>

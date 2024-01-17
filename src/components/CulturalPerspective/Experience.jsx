@@ -4,7 +4,7 @@ import ExperienceCard from './ExperienceCard'
 function Experience() {
   return (
     <>
-      <div className="h-[88vh] flex items-center justify-evenly text-textColor overflow-hidden">
+      <div className="h-[88%] flex items-center justify-evenly text-textColor overflow-hidden">
         <div className="w-[30%] h-full relative">
           <NavLink
             className=" absolute w-full h-[70%] rounded-b-[2rem] overflow-hidden

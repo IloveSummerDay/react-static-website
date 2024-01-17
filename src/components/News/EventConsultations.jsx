@@ -7,11 +7,11 @@ function EventConsultations() {
     <>
       <div
         className=" bg-gradient-to-r from-gradientFrom to-gradientTo
-       pt-8 min-h-[88vh]
+       pt-8 min-h-[88%]
        "
       >
         <div
-          className="h-[40vh] w-[70%]  mx-auto
+          className="h-[40%] w-[70%]  mx-auto
         "
         >
           <StoriesSwiper

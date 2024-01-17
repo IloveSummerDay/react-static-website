@@ -1,8 +1,19 @@
-import '../../assets/css/新闻.css'
+import { useEffect } from 'react'
 
 function Events2() {
+  useEffect(() => {
+    const link = document.createElement('link')
+    link.href = '/css/新闻.css' // 替换为你的 CSS 文件路径
+    link.rel = 'stylesheet'
+
+    document.head.appendChild(link)
+
+    return () => {
+      document.head.removeChild(link)
+    }
+  }, [])
   return (
-    <div className="container">
+    <div className="container1">
       <div className="navigat"></div>
       <div className="main">
         <div className="title">
@@ -26,14 +37,14 @@ function Events2() {
         </div>
         <div className="part_photo2">
           <div className="photo">
-            <img src="/public/_blankImg/新闻资讯5.png" />
+            <img src="/_blankImg/新闻资讯5.png" />
           </div>
           <div className="photo_1">
-            <img src="/public/_blankImg/新闻资讯6.png" />
+            <img src="/_blankImg/新闻资讯6.png" />
           </div>
         </div>
         <div className="content">
-          <div className=" ml-[427px] leading-[10px]">
+          <div className=" flex flex-col justify-evenly items-center leading-[1.2rem]">
             <p>掐丝珐琅创意画步骤</p>
             <br />
             <p>拓稿——掐丝——点蓝</p>
@@ -47,10 +58,10 @@ function Events2() {
         </div>
         <div className="part_photo2">
           <div className="photo">
-            <img src="/public/_blankImg/新闻资讯7.png" />
+            <img src="/_blankImg/新闻资讯7.png" />
           </div>
           <div className="photo_1">
-            <img src="/public/_blankImg/新闻资讯8.png" />
+            <img src="/_blankImg/新闻资讯8.png" />
           </div>
         </div>
       </div>

@@ -1,8 +1,19 @@
-import '../../assets/css/新闻.css'
+import { useEffect } from 'react'
 
 export default function Conferences3() {
+  useEffect(() => {
+    const link = document.createElement('link')
+    link.href = '/css/新闻.css' // 替换为你的 CSS 文件路径
+    link.rel = 'stylesheet'
+
+    document.head.appendChild(link)
+
+    return () => {
+      document.head.removeChild(link)
+    }
+  }, [])
   return (
-    <div className="container">
+    <div className="container1">
       <div className="navigat"></div>
       <div className="main">
         <div className="title">
